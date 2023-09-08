@@ -1,0 +1,294 @@
+
+/* This all are for navbar  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Noto+Sans&display=swap');
+ 
+/* Ist step to css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body{
+    font-family :'Noto Sans', sans-serif;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+}
+
+ul li{
+    list-style:none;
+}
+
+a{
+    font-size:1.6rem ;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom:0.5em;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom:0.5em;
+    letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight:500;
+}
+.header{
+    height: 100vh;
+    background :linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('../img/header-image.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header .logo,
+.header .navbar a{
+    color: white;
+}
+
+
+.header .navbar .logo{
+    float: left;
+
+}
+.navbar .nav-item{
+    float: right;
+    margin-top: 1rem;
+
+}
+
+
+
+h1{
+    font-size:3.5rem;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    text-transform:uppercase;
+    padding: 1rem;
+}
+
+.navbar ::after{
+    content: '';
+    display:block;
+    clear:both;
+}
+
+html{
+    /* how to write the pixel into percentage*/
+    /* 16px = 100% */
+    /*find percentage 10px---(100/16)*10  */
+
+    font-size:62.5%;
+}
+
+.navbar{
+    padding: 1rem;
+}
+
+
+
+
+/* this all are content present in center in boarder */
+
+.header-content{
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top:50%;
+    left:25%;
+    transform: translate(-50, -50%);
+    text-align: center; 
+    background: linear-gradient(rgb(0,0,0,.2) rgb(0,0,0,.2));
+    scroll-behavior: smooth;
+
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform:uppercase;
+    margin: 0.5em 0;
+    letter-spacing: 5px;
+}
+
+.btn-primary{
+    background-color: aqua;
+    border-radius: 100px;
+    margin-top:20px;
+}
+
+
+.header-content h1{
+    letter-spacing: 1px;
+}
+
+@media (min-width: 500px){
+    html{
+        font-size:10px;
+    }
+}
+
+
+/* ==================================showcase-styling==================================== */
+      /* showcase mean- deganvy ,desert,egypt section styling*/
+
+      .showcase{
+        background: #ddd;
+        padding: 10rem 0;
+    }
+    
+    .row{
+        height: 350px;
+        background: #fff;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.527) ;
+    }
+    
+    .row1{
+        margin-bottom: 10rem;
+    }
+    
+    .row2 .img-box, .row1 .text-box{
+        float: right;
+        width: 50%;
+    }
+    
+    .row1 .img-box, .row2 .text-box{
+        float: left;
+        width: 50%;
+    }
+    
+    .row .img-box{
+        height: 100%;
+    }
+    
+    .row .text-box{
+        padding: 5rem;
+        height: 100%;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    
+    .row .img-box img{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .row .lg-heading{
+        font-size:3rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    .row .button{
+       border:2px solid aqua;
+       border-radius:1.5em;
+       color: aqua;
+       background: #fff;
+    }
+
+
+    /* ==feature section like-adevntrius part,less price, experienec ===*/
+    .feature{
+        padding: 10rem 0;
+        }
+        
+        .box-wrapper{
+            box-shadow:5px 5px 20px 0px #000;
+        }
+        
+        .box{
+            width: 33.33333%;
+            float: left;
+            padding: 2rem;
+            text-align: center;
+            margin: 0;
+        }
+        
+        .box-1, .box-3{
+            background-color: #263238;
+            color: white;
+            height: 100%;
+            margin: 0;
+        }
+        
+        .box-wrapper::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .box-2{
+            background-color: rgba(255, 0, 0, 0.498);
+            color: white;
+            margin: 0;
+        }
+        
+        /* ===============footer section============== */
+        .footer{
+            background:#000;
+            color: #fff;
+            padding: 2rem;
+            text-align:center
+        }
+        
+        
+        .social-media-links i{
+            margin: 1rem;
+            color: white;
+        }
+
+
+         /* ====================media quarry==================== */
+
+         @media(max-width:500px){
+            html{
+                font-size:50%;
+            }
+            .navbar .logo{
+                float: none;
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+            .nav-items{
+                float: none;
+                width: 100%;
+                display: block;
+                position: relative;
+                right: 20%;
+
+            }
+            .header-content{
+                text-align: left;
+                left: 20%;
+            }
+
+            .btn,a{
+                position: relative;
+                left:15%;
+            }
+            .row{
+                height: auto;
+                width: 100%;
+            }
+            .row .img-box,
+            .row .text-box{
+                float: none;
+                /* width: none; */
+                /* text-align: cent */
+            }
+         }
+        

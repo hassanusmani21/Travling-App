@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/showcase-section.css">
+    <link rel="stylesheet" href="./css/feature-section.css">
+     <link rel="stylesheet" href="./css/about-page.css">
+    <script src="https://kit.fontawesome.com/c27cf110dd.js" crossorigin="anonymous"></script>
+    <title>TRAVAL WEBSITE | WELCOME</title>
+</head>
+<body>
+    <header class="header1">
+        <nav class="header2">
+            <div class="container">
+                <h1 class="logo1">WT</h1>
+                <ul class="nav-items1">
+                    <li class="nav-item1" ><a href="./HOME.HTML">HOME</a></li>
+                    <li class="nav-item1"><a href="./ABOUT.HTML">ABOUT</a></li>
+                    <li class="nav-item1"><a href="/CONTACT.HTML">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+     <section class="about">
+      
+     <div class="container">
+        <h2 class="lg-heading  lg-heading1">About Us</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus ipsam velit officiis itaque, architecto vero accusantium eveniet illo soluta tempore</p>
+        <div class="about-wrapper">
+            <div class="right">
+                <li> Lorem ipsum dolor sit.</li>
+                <li> Lorem ipsum dolor sit.</li>
+                <li> Lorem ipsum dolor sit.</li>
+            </div>
+            <div class="left">
+                <li> Lorem ipsum dolor sit.</li>
+                <li> Lorem ipsum dolor sit.</li>
+                <li> Lorem ipsum dolor sit.</li>
+            </div>
+        </div>
+        <div class="counts">
+            <div class="count-item">
+                <span>2500</span>
+                <p>Travelled</p>
+            </div>
+            <div class="count-item">
+                <span>500</span>
+                <p>Places</p>
+            </div>
+            <div class="count-item">
+                <span>400</span>
+                <p>Guide</p>
+            </div>
+            <div class="count-item">
+                <span>20</span>
+                <p>Support</p>
+            </div>
+        </div>
+     </div>
+     </section>
+<br> <br> <br> <br>
+
+
+     <div class="container btn-banner">
+        <div class="cta-banner-left">
+            <p class="cta-line">What are you waiting for,reach us right now.</p>
+        </div>
+        <div class="cta-banner-right">
+            <a href="./CONTACT.HTML">CONTACT US</a>
+        </div>
+     </div>
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+</body>
+</html>

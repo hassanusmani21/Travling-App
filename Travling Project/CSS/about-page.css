@@ -1,0 +1,208 @@
+  
+  /* this is purely for nav or maun and logo css coding */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Noto+Sans&display=swap');
+ 
+/* Ist step to css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family :'Noto Sans', sans-serif;
+    line-height: 1.7;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    font-size:1.6rem ;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom:0.5em;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom:0.5em;
+    letter-spacing: 0.15em;
+}
+h2,h3,h1{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight:500;
+}
+
+.header2 .logo1{
+    float:left;
+}
+
+.header2 .nav-items1{
+    float: right;
+}
+
+.header2 ::after{
+    content: '';
+    display:block;
+    clear:both;
+}
+
+.header2 .nav-item1{
+    display: inline-block;
+    text-transform:uppercase;
+    padding: 1rem;
+}
+
+html{
+    /* how to write the pixel into percentage*/
+    /* 16px = 100% */
+    /*find percentage 10px---(100/16)*10  */
+
+    font-size:62.5%;
+}
+
+.header2{
+    padding: 1rem;
+    background:#263238;
+}
+
+
+h1{
+    font-size:3.5rem;
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header1 .logo1,
+.header1 .header2 a{
+    color: white;
+}
+
+
+/* ===About page content page styling===== */
+/* study more about seudo element in css  */
+
+
+.about{
+    padding: 5rem 0;
+}
+
+.lg-heading1{
+    font-size: 2.3em;
+}
+
+.about .container .lg-heading{
+    border-bottom: 5px solid aqua;
+}
+
+h2.lg-heading1{
+    margin-bottom: 0px;
+    font-size: 2.5rem;
+}
+
+.about-wrapper{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper::after{
+    content: '';
+    display:block;
+    clear: both;
+}
+
+.about-wrapper .left .right{
+    text-align: center;
+}
+
+.about-wrapper li::before{
+    content: '\2713';
+    color: aqua;
+    font-weight:bold;
+    padding-right:1rem ;
+}
+
+/* =================count item styling========== */
+.counts{
+    margin-top:3rem;
+}
+.count-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+/* .count::after{ct
+    content: '';
+    display:block;
+    clear: both;
+} */
+
+.count-item span{
+    font-size: 3rem;
+    font-weight: 500;
+    color: aqua;
+}
+
+.count-item p{
+    font-size: 2rem;
+    color:black;
+    /* font-weight: 600; */
+}
+/*  ================================================== */
+.cta-banner-left{
+    float: left;
+}
+
+.cta-banner-right{
+    float: right;
+}
+.btn-banner::after{
+ content: '';
+ display: block;
+ clear:both;
+}
+
+.btn-banner a{
+        
+    color: white;
+    font-weight: bold;
+    border: 4px solid white;
+    letter-spacing: 1rem;
+    font-size: 2rem;
+    position: relative;
+    top: 3px;
+    padding: 1rem 5rem;
+}
+
+.btn-banner{
+    padding: 2rem ;
+    background: aqua;
+}
+
+.btn-banner p{
+    font-size: 1.7rem;
+}
+
+
+
+/*========================== showcase-styling================================================ */
+/* showcase means -  */
